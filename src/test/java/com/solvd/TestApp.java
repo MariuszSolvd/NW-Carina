@@ -9,6 +9,7 @@ public class TestApp extends AbstractTest {
     @Test
     public void shouldOpenHomePage() {
         HomePage homePage = initPage(getDriver(), HomePage.class);
+        homePage.open();
         homePage.isPageOpened();
     }
 }
